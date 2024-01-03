@@ -126,12 +126,12 @@ body {
   }
 
 
-@media screen and (min-width: 1000px) {
+/* @media screen and (min-width: 1000px) {
 	#mainPage {
 		height: 100%;
 		overflow-y: hidden;
 	}
-}
+} */
 
 #timeLeft {
 	font-weight: bold;
@@ -152,7 +152,7 @@ body {
 /*==========
   Brand Name
   =========== */
-#brand {
+/* #brand {
 	min-width: 150px;
 	font-weight: bold;
 }
@@ -160,13 +160,13 @@ body {
 #brandName {
 	font-size: 2.5rem;
 	line-height: 3rem;
-}
+} */
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
 	#brandName {
 		font-size: 8vw;
 	}
-}
+} */
 
 /*========
   Buttons
@@ -372,11 +372,11 @@ body {
 	color: #6c757d;
 }
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
 	#NoDataLoggedText {
 		font-size: 7vw;
 	}
-}
+} */
 
 .table th {
 	border-top: none;
@@ -440,7 +440,7 @@ body {
 	word-wrap: break-word;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
 	.section-title {
 		font-size: 7vw;
 	}
@@ -450,12 +450,12 @@ body {
 		overflow-x: hidden;
 	}
 }
-/*  */
-@media screen and (max-width: 400px) {
+ */
+/* @media screen and (max-width: 400px) {
 	.section-content {
 		font-size: 5vw;
 	}
-}
+} */
 
 .section-title-border {
 	height: 0.5rem;
@@ -716,17 +716,43 @@ input:checked + .slider:before {
 		-webkit-linear-gradient(left, #ddd 50%, var(--main-red-color) 50%);
 }
 
+    /* Increase specificity to override Bootstrap styles */
+    .nav-pills .nav-link#pomodoros {
+        font-size: 25px !important;
+    }
+
+    .nav-pills .nav-link#shortBreak {
+        font-size: 25px !important;
+    }
+
+    .nav-pills .nav-link#longBreak {
+        font-size: 25px !important;
+    }
+
 /* Media Query for Mobile */
 @media screen and (max-width: 767px) {
 	.radial-progress-bar {
-	  width: 300px; /* Adjust as needed for smaller screens */
-	  /* height: auto; */
+	  width: 500px; /* Adjust as needed for smaller screens */
+	  height: auto;
 	  min-width: unset;
 	}
   
 	.overlay {
-	  width: 300px; /* Adjust as needed for smaller screens */
-	  /* height: auto; */
+	  width: 500px; /* Adjust as needed for smaller screens */
+	  height: auto;
 	  padding-top: 100%; /* Maintain the aspect ratio for a circle */
 	}
+	.section-content {
+		font-size: 10vw;
+	}
+
+	.container {
+        padding: 20px; /* Adjust padding for containers */
+    }
+
+	.alert {
+	padding: 15px;
+    margin: 10px 0;
+	font-size: 20px;
   }
+}
