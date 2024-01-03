@@ -8,6 +8,7 @@
 	--form-input-bg: #1e1e2e;
 	--lg-border-radius: 2rem;
 	--sm-border-radius: 1rem;
+	--pomodoro: url(/assets/img/mountainview.webp);
 }
 
 * {
@@ -35,6 +36,10 @@ body {
 
 body {
 	transition: background 2s ease-in-out;
+}
+
+.fas {
+	color: white;
 }
 /*============
   Main Content
@@ -121,12 +126,12 @@ body {
   }
 
 
-/* @media screen and (min-width: 1000px) { */
-	/* #mainPage { */
-		/* height: 100%; */
-		/* overflow-y: hidden; */
-	/* } */
-/* } */
+@media screen and (min-width: 1000px) {
+	#mainPage {
+		height: 100%;
+		overflow-y: hidden;
+	}
+}
 
 #timeLeft {
 	font-weight: bold;
@@ -157,11 +162,11 @@ body {
 	line-height: 3rem;
 }
 
-/* @media screen and (max-width: 500px) { */
-	/* #brandName { */
-		/* font-size: 8vw; */
-	/* } */
-/* } */
+@media screen and (max-width: 500px) {
+	#brandName {
+		font-size: 8vw;
+	}
+}
 
 /*========
   Buttons
@@ -367,11 +372,11 @@ body {
 	color: #6c757d;
 }
 
-/* @media screen and (max-width: 400px) { */
-	/* #NoDataLoggedText { */
-		/* font-size: 7vw; */
-	/* } */
-/* } */
+@media screen and (max-width: 400px) {
+	#NoDataLoggedText {
+		font-size: 7vw;
+	}
+}
 
 .table th {
 	border-top: none;
@@ -435,22 +440,22 @@ body {
 	word-wrap: break-word;
 }
 
-/* @media screen and (max-width: 600px) { */
-	/* .section-title { */
-		/* font-size: 7vw; */
-	/* } */
-/*  */
-	/* html, */
-	/* body { */
-		/* overflow-x: hidden; */
-	/* } */
-/* } */
+@media screen and (max-width: 600px) {
+	.section-title {
+		font-size: 7vw;
+	}
 
-/* @media screen and (max-width: 400px) { */
-	/* .section-content { */
-		/* font-size: 5vw; */
-	/* } */
-/* } */
+	html,
+	body {
+		overflow-x: hidden;
+	}
+}
+/*  */
+@media screen and (max-width: 400px) {
+	.section-content {
+		font-size: 5vw;
+	}
+}
 
 .section-title-border {
 	height: 0.5rem;
@@ -709,20 +714,4 @@ input:checked + .slider:before {
 .progress-value {
 	background-image: -webkit-linear-gradient(left, var(--main-red-color) 50%, transparent 50%),
 		-webkit-linear-gradient(left, #ddd 50%, var(--main-red-color) 50%);
-}
-
-/* Media Query for Mobile */
-@media screen and (max-width: 767px) {
-	.radial-progress-bar {
-	  width: 100%;
-	  height: auto;
-	  min-width: unset;
-	}
-  
-	.radial-progress-bar .overlay {
-	  width: 80%;
-	  height: 80%;
-	  padding-top: 80%;
-	}
-
 }
