@@ -719,13 +719,13 @@ input:checked + .slider:before {
 /* Media Query for Mobile */
 @media screen and (max-width: 767px) {
 	.radial-progress-bar {
-	  width: 60%; /* Adjust as needed for smaller screens */
+	  width: 300px; /* Adjust as needed for smaller screens */
 	  /* height: auto; */
 	  min-width: unset;
 	}
   
 	.overlay {
-	  width: 60%; /* Adjust as needed for smaller screens */
+	  width: 300px; /* Adjust as needed for smaller screens */
 	  /* height: auto; */
 	  padding-top: 100%; /* Maintain the aspect ratio for a circle */
 	}
