@@ -718,27 +718,27 @@ input:checked + .slider:before {
 
     /* Increase specificity to override Bootstrap styles */
     .nav-pills .nav-link#pomodoros {
-        font-size: 25px !important;
+        font-size: 20px !important;
     }
 
     .nav-pills .nav-link#shortBreak {
-        font-size: 25px !important;
+        font-size: 20px !important;
     }
 
     .nav-pills .nav-link#longBreak {
-        font-size: 25px !important;
+        font-size: 20px !important;
     }
 
 /* Media Query for Mobile */
 @media screen and (max-width: 767px) {
 	.radial-progress-bar {
-	  width: 500px; /* Adjust as needed for smaller screens */
+	  width: auto; /* Adjust as needed for smaller screens */
 	  height: auto;
 	  min-width: unset;
 	}
   
 	.overlay {
-	  width: 500px; /* Adjust as needed for smaller screens */
+	  width: auto; /* Adjust as needed for smaller screens */
 	  height: auto;
 	  padding-top: 100%; /* Maintain the aspect ratio for a circle */
 	}
